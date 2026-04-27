@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    min-height: 100vh;
+    align-content: center;
+    justify-items: center;
+    color:white;
+    text-align: center;
+}
+h3{
+    font-size: 0.8rem;
+    text-align: center;
+}
+section{
+    width: 40%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 2rem;
+}
+#counter{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 6rem;
+}
+hr{
+    width: 5%;
+    justify-self: center;
+    margin: 1rem;
+}
+#buttons{
+    display: flex;
+    gap: 1rem;
+    justify-self: center;
+    margin: 2rem;
+}
+#increment, #decrement{
+    font-size: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    &:hover{
+        transform: scale(1.4);
+    }
+}
+#reset, select{
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+select{
+    margin: 0;
+}
+.steps{
+    display: flex;
+    gap: 1rem;
+    justify-self: center;
+}
+.steps p{
+    font-size: 0.9rem;
+    align-self: center;
+}
+option{
+    background: rgba(38, 33, 33, 0.798);
+    color: white;
+}
+#dots{
+    font-size: 4rem;
+    margin-top: 0.2rem;
+    overflow: hidden;
+}
